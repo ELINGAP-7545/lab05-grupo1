@@ -23,7 +23,7 @@ La unidad aritmÃ©tica, es la que cuenta con componentes para realizar operacione
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG)
 
 ## **Caja funcional del display 7 segmentos**
-![cajabcd](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajabcd.jpg)
+![cajabcd](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajabcd.JPG)
 
 La caja funcional ademas de la salidad de 7 segmentos G_HEX contiene una salida An, esta salida es para conectar eventualmente el ánodo del display y poder hacer visualización dinámica, cuando se tiene mas de un display conectado.
 
