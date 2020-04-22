@@ -43,7 +43,7 @@ Como ejercicio academico, se propone construye una unidad con 4 operaciones arit
 opcode | operacion  enteros positivos
 00| suma
 01| resta 
-10|  multiplicacion
+10|  multiplicación
 11| división 
 
 Por lo tanto, la unidad debe contar con:
