@@ -11,9 +11,9 @@ Se realiza la implementacion de las operaciones logicas (suma, resta, multiplica
 ## descipción 
 La unidad aritmética, es la que cuenta con componentes para realizar operaciones aritméticas; cada operación aritmética es ejecutada acuerdo al código de la operación. 
 
-![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal suma.PNG)
+![caja_funcinal suma]https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG
 
-![caja_funcinal multiplicacion](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal multiplicacion.PNG)
+![caja_funcinal multiplicacion]htps://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG
 
 
 Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
