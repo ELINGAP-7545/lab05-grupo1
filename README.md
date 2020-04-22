@@ -4,16 +4,16 @@
 * Sergio Obando
 * Julian Diaz
 
-# Unidad de suma, resta, multiplicacion, division y visualizacion BCD
+# Unidad de suma, resta, multiplicación, división y visualización BCD
 
 ## Introducción
 
-Se realiza la implementacion de las operaciones logicas (suma, resta, multiplicacion, division) en una unidad aritmetica logica (ALU) correspondiente a la FPGA para su simulacion y visualizacion, para lograr esto se realizan los siguientes pasos:
+Se realiza la implementación de las operaciones lógicas (suma, resta, multiplicación, división) en una unidad aritmética lógica (ALU) correspondiente a la FPGA para su simulación y visualización, para lograr esto se realizan los siguientes pasos:
 
-## Descipcion 
-La unidad aritmetica, es la que cuenta con componentes para realizar operaciones aritmeticas; cada operacion aritmetica es ejecutada deacuerdo al código de la operacion.
+## Descripción 
+La unidad aritmética, es la que cuenta con componentes para realizar operaciones aritméticas; cada operación aritmética es ejecutada de acuerdo al código de la operación.
  
-A continuacion se muestra los bloques que componen la unidad aritmetica:
+A continuación se muestra los bloques que componen la unidad aritmética:
  
 ## **Caja funcional del sumador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG)
@@ -27,7 +27,7 @@ A continuacion se muestra los bloques que componen la unidad aritmetica:
 ## **Caja funcional del display 7 segmentos**
 ![cajabcd](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajabcd.JPG)
 
-La caja funcional ademas de la salidad de 7 segmentos G_HEX contiene una salida An, esta salida es para conectar eventualmente el anodo del display y poder hacer visualizacion dinamica, cuando se tiene mas de un display conectado.
+La caja funcional además de la salida de 7 segmentos G_HEX contiene una salida An, esta salida es para conectar eventualmente el ánodo del display y poder hacer visualización dinámica, cuando se tiene más de un display conectado.
 
 ## **Caja funcional del multiplexor**
 ![cajamux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajamux.png)
@@ -37,10 +37,10 @@ La caja funcional ademas de la salidad de 7 segmentos G_HEX contiene una salida 
 
 
 
-Como ejercicio academico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicacion y division.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operacion se realiza acorde a la señal opcode, y segun la siguiente tabla:
+Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y según la siguiente tabla:
 
 
-opcode | operacion  enteros positivos
+opcode | operación  enteros positivos
 00| suma
 01| resta 
 10|  multiplicación
@@ -78,6 +78,4 @@ El diagrama estructural, se soporta en los componentes desarrollados en los ante
 7. implementar el sistema completo en la FPGA remota
 8. hacer la documentación respectiva en el archivo README
   
-
- 
 
