@@ -13,6 +13,8 @@ Se realiza la implementacion de las operaciones logicas (suma, resta, multiplica
 ## Descipción 
 La unidad aritmética, es la que cuenta con componentes para realizar operaciones aritméticas; cada operación aritmética es ejecutada deacuerdo al código de la operación.
  
+A continuación se muestra los bloques que componen la unidad aritmética:
+ 
 ## **Caja funcional del sumador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG)
 
