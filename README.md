@@ -1,16 +1,20 @@
+* Jaider Neira
+* Sergio Obando
+* Julian Diaz
+
+
 # lab05 : Unidad de suma, resta, multiplicación, división y visualización BCD
 ## Introducción
 
-
-Para este paquete de trabajo, deben estar inscrito en un grupo y clonar la información del siguiente link [WP05](https://classroom.github.com/g/dHrBou9a). Una vez aceptado el repositorio debe descargarlo en su computador, para ello debe clonar el mismo. Si no sabe cómo hacerlo revise la metodología de trabajo, donde se explica el proceso
-
-Las documentación deben estar diligencia en el archivo README.md del repositorio clonado.
-
-Una vez clone el repositorio, realice lo siguiente:
-
+Se realiza la implementacion de las operaciones logicas (suma, resta, multiplicacion, division) en una unidad aritmetica logica (ALU) correspondiente a la FPGA para su simulacion y visualizacion, para lograr esto se realizan los siguientes pasos:
 
 ## descipción 
-La unidad aritmética, es tal que cuenta con componentes para realizar operaciones aritméticas. cada operación aritmética es ejecutada acuerdo al código de la operación. 
+La unidad aritmética, es la que cuenta con componentes para realizar operaciones aritméticas; cada operación aritmética es ejecutada acuerdo al código de la operación. 
+
+![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal suma.PNG)
+
+![caja_funcinal multiplicacion](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal multiplicacion.PNG)
+
 
 Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
 
