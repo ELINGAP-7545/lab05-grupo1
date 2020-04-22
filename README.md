@@ -4,7 +4,6 @@
 * Sergio Obando
 * Julian Diaz
 
-# Laboratorio 05
 # Unidad de suma, resta, multiplicación, división y visualización BCD
 
 ## Introducción
@@ -14,13 +13,13 @@ Se realiza la implementacion de las operaciones logicas (suma, resta, multiplica
 ## Descipción 
 La unidad aritmética, es la que cuenta con componentes para realizar operaciones aritméticas; cada operación aritmética es ejecutada deacuerdo al código de la operación.
  
-##**Caja funcional del sumador**
+## **Caja funcional del sumador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG)
 
-##Caja funcional del restador 
+## **Caja funcional del restador**
 ![cajarestador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajarestador.png)
 
-##Caja funcional del multiplicador
+## **Caja funcional del multiplicador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG)
 
 
