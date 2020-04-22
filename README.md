@@ -4,16 +4,16 @@
 * Sergio Obando
 * Julian Diaz
 
-# Unidad de suma, resta, multiplicación, división y visualización BCD
+# Unidad de suma, resta, multiplicacion, division y visualizacion BCD
 
-## Introducción
+## Introduccion
 
 Se realiza la implementacion de las operaciones logicas (suma, resta, multiplicacion, division) en una unidad aritmetica logica (ALU) correspondiente a la FPGA para su simulacion y visualizacion, para lograr esto se realizan los siguientes pasos:
 
-## Descipción 
-La unidad aritmética, es la que cuenta con componentes para realizar operaciones aritméticas; cada operación aritmética es ejecutada deacuerdo al código de la operación.
+## Descipcion 
+La unidad aritmetica, es la que cuenta con componentes para realizar operaciones aritmeticas; cada operacion aritmetica es ejecutada deacuerdo al código de la operacion.
  
-A continuación se muestra los bloques que componen la unidad aritmética:
+A continuacion se muestra los bloques que componen la unidad aritmetica:
  
 ## **Caja funcional del sumador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG)
@@ -27,7 +27,7 @@ A continuación se muestra los bloques que componen la unidad aritmética:
 ## **Caja funcional del display 7 segmentos**
 ![cajabcd](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajabcd.JPG)
 
-La caja funcional ademas de la salidad de 7 segmentos G_HEX contiene una salida An, esta salida es para conectar eventualmente el �nodo del display y poder hacer visualizaci�n din�mica, cuando se tiene mas de un display conectado.
+La caja funcional ademas de la salidad de 7 segmentos G_HEX contiene una salida An, esta salida es para conectar eventualmente el anodo del display y poder hacer visualizacion dinamica, cuando se tiene mas de un display conectado.
 
 ## **Caja funcional del multiplexor**
 ![cajamux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajamux.png)
@@ -37,26 +37,26 @@ La caja funcional ademas de la salidad de 7 segmentos G_HEX contiene una salida 
 
 
 
-Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y segun la siguiente tabla:
+Como ejercicio academico, se propone construye una unidad con 4 operaciones aritmeticas: suma, resta, multiplicacion y division.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operacion se realiza acorde a la señal opcode, y segun la siguiente tabla:
 
 
-opcode | operación  enteros positivos
+opcode | operacion  enteros positivos
 00| suma
 01| resta 
-10|  multiplicación
+10|  multiplicacion
 11| división 
 
 Por lo tanto, la unidad debe contar con:
 
 1. Los dos puertos de entrada A y B. cada uno de  3 bits.
-2. La señal `opcode` de dos bits, para configurar la operación que se realiza con los datos de `portA` y `portB`.
-3. La a visualización de unidad debe tener las salidas de los 4 ánodos, `An`  y las 7 señales de los cátodos, `sseg`.
-4. Para las FSM  y las visualización dinámica, se debe incluir la señal de `clk` de entrada.
+2. La señal `opcode` de dos bits, para configurar la operacion que se realiza con los datos de `portA` y `portB`.
+3. La a visualizacion de unidad debe tener las salidas de los 4 ánodos, `An`  y las 7 señales de los anodos, `sseg`.
+4. Para las FSM  y las visualizacion dinámica, se debe incluir la señal de `clk` de entrada.
 5. la señal de reset del sistema
 
 ## Diagrama de caja negra
 
-Según las especificaciones anteriormente descrita, la caja funcional de la unidad aritmética propuesta es:
+Según las especificaciones anteriormente descrita, la caja funcional de la unidad aritmetica propuesta es:
 
 ![caja negra](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab06_Unidad_aritmetica/doc/cajanegra.png)
 
