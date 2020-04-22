@@ -6,7 +6,7 @@
 
 # Unidad de suma, resta, multiplicacion, division y visualizacion BCD
 
-## Introduccion
+## Introducción
 
 Se realiza la implementacion de las operaciones logicas (suma, resta, multiplicacion, division) en una unidad aritmetica logica (ALU) correspondiente a la FPGA para su simulacion y visualizacion, para lograr esto se realizan los siguientes pasos:
 
