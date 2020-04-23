@@ -18,7 +18,7 @@ A continuación se muestra los bloques que componen la unidad aritmética:
 ## **Caja funcional del sumador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG)
 ## **Diagrama estructural del sumador de 4 bits**
-![suma4](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma4.JPEG)
+![suma4](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma4.jpeg)
 ## **Logica combinacional del sumador**
 ![suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma.JPG)
  
@@ -28,7 +28,7 @@ A continuación se muestra los bloques que componen la unidad aritmética:
 ## **Caja funcional del multiplicador**
 ![caja_funcinal multiplicacion](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG)
 ## **Diagrama estructural del multiplicador**
-![multiplicador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/multiplicador.JPEG)
+![multiplicador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/multiplicador.jpeg)
 
 ## **Caja funcional del display 7 segmentos**
 ![cajabcd](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajabcd.JPG)
@@ -40,11 +40,12 @@ La caja funcional además de la salida de 7 segmentos G_HEX contiene una salida 
 ## **Caja funcional del multiplexor**
 ![cajamux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajamux.png)
 ## **Logica combinacional del multiplexor**
-![mux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajamux.JPG)
+![mux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/mux.JPG)
 
 ## **Caja funcional del decodificador**
 ![cajadeco](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajadeco.png)
-![deco](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajadeco.JPG)
+## **Logica combinacional del decodificador**
+![deco](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/deco.JPG)
 
 
 Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y según la siguiente tabla:
