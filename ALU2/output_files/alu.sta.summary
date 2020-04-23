@@ -1,0 +1,101 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'display:dp|cfreq[16]'
+Slack : -4.197
+TNS   : -24.898
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -3.846
+TNS   : -68.987
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.415
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'display:dp|cfreq[16]'
+Slack : 0.725
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -46.710
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'display:dp|cfreq[16]'
+Slack : -0.724
+TNS   : -11.372
+
+Type  : Slow 1100mV 0C Model Setup 'display:dp|cfreq[16]'
+Slack : -4.409
+TNS   : -25.496
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -3.923
+TNS   : -71.036
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'display:dp|cfreq[16]'
+Slack : 0.717
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -46.735
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'display:dp|cfreq[16]'
+Slack : -0.724
+TNS   : -11.335
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -2.443
+TNS   : -9.910
+
+Type  : Fast 1100mV 85C Model Setup 'display:dp|cfreq[16]'
+Slack : -1.451
+TNS   : -7.880
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.176
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'display:dp|cfreq[16]'
+Slack : 0.256
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.291
+TNS   : -3.820
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'display:dp|cfreq[16]'
+Slack : 0.070
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -2.058
+TNS   : -7.707
+
+Type  : Fast 1100mV 0C Model Setup 'display:dp|cfreq[16]'
+Slack : -1.400
+TNS   : -7.092
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.160
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'display:dp|cfreq[16]'
+Slack : 0.228
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.296
+TNS   : -3.766
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'display:dp|cfreq[16]'
+Slack : 0.087
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -4,39 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "co",
+					"name" : "sal[0]",
 					"strict" : false
 				},
 				{
-					"name" : "zi[0]",
+					"name" : "sal[1]",
 					"strict" : false
 				},
 				{
-					"name" : "zi[1]",
+					"name" : "sal[2]",
 					"strict" : false
 				},
 				{
-					"name" : "zi[2]",
+					"name" : "sal[3]",
 					"strict" : false
 				},
 				{
-					"name" : "zi[3]",
+					"name" : "xi[0]",
 					"strict" : false
 				},
 				{
-					"name" : "xi[3]",
-					"strict" : false
-				},
-				{
-					"name" : "yi[3]",
-					"strict" : false
-				},
-				{
-					"name" : "xi[2]",
-					"strict" : false
-				},
-				{
-					"name" : "yi[2]",
+					"name" : "yi[0]",
 					"strict" : false
 				},
 				{
@@ -48,11 +36,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "xi[0]",
+					"name" : "xi[2]",
 					"strict" : false
 				},
 				{
-					"name" : "yi[0]",
+					"name" : "yi[2]",
+					"strict" : false
+				},
+				{
+					"name" : "xi[3]",
+					"strict" : false
+				},
+				{
+					"name" : "yi[3]",
 					"strict" : false
 				}
 			]
