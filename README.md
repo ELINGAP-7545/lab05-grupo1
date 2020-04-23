@@ -17,24 +17,34 @@ A continuación se muestra los bloques que componen la unidad aritmética:
  
 ## **Caja funcional del sumador**
 ![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20suma.JPG)
-
+## **Diagrama estructural del sumador de 4 bits**
+![suma4](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma4.JPEG)
+## **Logica combinacional del sumador**
+![suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma.JPG)
+ 
 ## **Caja funcional del restador**
 ![cajarestador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajarestador.png)
 
 ## **Caja funcional del multiplicador**
-![caja_funcinal suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG)
+![caja_funcinal multiplicacion](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG)
+## **Diagrama estructural del multiplicador**
+![multiplicador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/multiplicador.JPEG)
 
 ## **Caja funcional del display 7 segmentos**
 ![cajabcd](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajabcd.JPG)
+## **Logica combinacional del display**
+![display](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/display.JPG)
 
 La caja funcional además de la salida de 7 segmentos G_HEX contiene una salida An, esta salida es para conectar eventualmente el ánodo del display y poder hacer visualización dinámica, cuando se tiene más de un display conectado.
 
 ## **Caja funcional del multiplexor**
 ![cajamux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajamux.png)
+## **Logica combinacional del multiplexor**
+![mux](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajamux.JPG)
 
 ## **Caja funcional del decodificador**
 ![cajadeco](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajadeco.png)
-
+![deco](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajadeco.JPG)
 
 
 Como ejercicio académico, se propone construye una unidad con 4 operaciones aritméticas: suma, resta, multiplicación y división.  de igual manera, el resultados se visualiza en los display de siete segmentos. El flujo de datos y la selección de la operación se realiza acorde a la señal opcode, y según la siguiente tabla:
@@ -64,6 +74,7 @@ Según las especificaciones anteriormente descrita, la caja funcional de la unid
 ## Diagrama estructural
 
 ![estructural](https://github.com/Fabeltranm/SPARTAN6-ATMEGA-MAX5864/blob/master/lab/lab06_Unidad_aritmetica/doc/diagraEstructural.png)
+
 
 El diagrama estructural, se soporta en los componentes desarrollados en los anteriores laboratorios. De esta manera,  tanto el sumador, el multiplicador  y el Display, son tomados de los lab2, lab5 y lab4  respectivamente. Adicional a la estructura de cada operación se encuentra el decodificador  y el multiplexador.
 
