@@ -21,22 +21,24 @@ A continuación se muestra los bloques que componen la unidad aritmética:
 ![suma4](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma4.jpeg)
 ## **Logica combinacional del sumador**
 ![suma](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma.JPG)
-
+## **Imagen de simulacion Sumador**
  ![suma_FPGA](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/suma_FPGA.JPG)
  
 ## **Caja funcional del restador**
 ![cajarestador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/cajarestador.png)
-
+## **Imagen de simulacion Restador**
 ![resta_FPGA](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/resta_FPGA.JPG)
 
 ## **Caja funcional del multiplicador**
 ![caja_funcinal multiplicacion](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/caja_funcinal%20multiplicacion.JPG)
 ## **Diagrama estructural del multiplicador**
 ![multiplicador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/multiplicador.jpeg)
+## **Imagen de simulacion Multiplicador**
+![multiplicador_FPGA](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/multiplicador_FPGA.jpeg)
 
 ## **Caja funcional del divisor**
 ![DIVISOR](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/DIVISOR.jpg)
-
+## **Imagen de simulacion Divicion**
 ![divisor_FPGA](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/divisor_FPGA.JPG)
 
 ## **Caja funcional del display 7 segmentos**
