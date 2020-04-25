@@ -1,15 +1,56 @@
-module Restador (xi, yi,co,zi);
+module restador( 
 
-  input [3 :0] xi;
-  input [3 :0] yi;
-  output co;
-  output [3 :0] zi;
+input [2:0] A,  
+input [2:0] B,  
+input reset,
+output reg [2:0] res,
+output reg sig
+);
 
-  wire c1,c2,c3;
-  rest1bcc s0 (.A(xi[0]), .B(yi[0]), .Ci(0),  .Cout(c1) ,.S(zi[0]));
-  rest1bcc s1 (.A(xi[1]), .B(yi[1]), .Ci(c1), .Cout(c2) ,.S(zi[1]));
-  rest1bcc s2 (.A(xi[2]), .B(yi[2]), .Ci(c2), .Cout(c3) ,.S(zi[2]));
-  rest1bcc s3 (.A(xi[3]), .B(yi[3]), .Ci(c3), .Cout(co) ,.S(zi[3]));
-	
 
-endmodule 
+reg [2:0] xi; 
+reg [2:0] yi;
+reg [2:0] ca1;
+reg [2:0] ca2;
+reg [2:0] neg;
+
+
+always @(*) begin
+
+if (reset == 1) begin
+
+xi = 0;
+yi = 0;
+ca1 = 0;
+ca2 = 0;
+
+end
+
+else begin
+
+xi <= A;
+yi <= B;
+
+ca1 = ~yi;
+ca2 = ca1 + 1;
+
+if (xi < yi)begin
+
+neg = xi + ca2;
+neg = ~neg + 1;
+res = neg;
+sig = 1;
+
+end
+
+else begin
+
+res = xi + ca2;
+sig = 0;
+
+end
+end
+end
+
+
+endmodule
