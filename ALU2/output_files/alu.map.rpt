@@ -1,5 +1,5 @@
-Analysis & Synthesis report for alu
-Thu Apr 23 15:04:32 2020
+Analysis & Elaboration report for alu
+Thu Apr 23 19:06:13 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -7,28 +7,18 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Synthesis Summary
-  3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |alu|multiplicador:mul|status
-  9. Registers Removed During Synthesis
- 10. Removed Registers Triggering Further Register Optimizations
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: multiplicador:mul
- 14. Port Connectivity Checks: "display:dp"
- 15. Port Connectivity Checks: "Restador:rest|rest1bcc:s0"
- 16. Port Connectivity Checks: "Restador:rest"
- 17. Port Connectivity Checks: "multiplicador:mul"
- 18. Port Connectivity Checks: "sum4bcc:sumador|sum1bcc:s0"
- 19. Port Connectivity Checks: "sum4bcc:sumador"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
- 23. Analysis & Synthesis Suppressed Messages
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: multiplicador:mul
+  5. Analysis & Elaboration Settings
+  6. Port Connectivity Checks: "display:dp"
+  7. Port Connectivity Checks: "Restador:rest|rest1bcc:s0"
+  8. Port Connectivity Checks: "Restador:rest"
+  9. Port Connectivity Checks: "multiplicador:mul"
+ 10. Port Connectivity Checks: "sum4bcc:sumador|sum1bcc:s0"
+ 11. Port Connectivity Checks: "sum4bcc:sumador"
+ 12. Analysis & Elaboration Messages
+ 13. Analysis & Elaboration Suppressed Messages
 
 
 
@@ -52,31 +42,56 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Apr 23 15:04:32 2020       ;
-; Quartus Prime Version           ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
-; Revision Name                   ; alu                                         ;
-; Top-level Entity Name           ; alu                                         ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 50                                          ;
-; Total pins                      ; 21                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Thu Apr 23 19:06:13 2020       ;
+; Quartus Prime Version         ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
+; Revision Name                 ; alu                                         ;
+; Top-level Entity Name         ; alu                                         ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: multiplicador:mul ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; START          ; 0     ; Signed Integer                        ;
+; CHECK          ; 1     ; Signed Integer                        ;
+; ADD            ; 2     ; Signed Integer                        ;
+; SHIFT          ; 3     ; Signed Integer                        ;
+; END1           ; 4     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                             ;
+; Analysis & Elaboration Settings                                                                                           ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
@@ -162,160 +177,6 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-+----------------------------+-------------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                     ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
-; BCDtoSSeg/display.v              ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/display.v            ;         ;
-; BCDtoSSeg/BCDtoSSeg.v            ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/BCDtoSSeg.v          ;         ;
-; sum4bc/Verilog2.v                ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/sum4bc/Verilog2.v              ;         ;
-; sum4bc/Sum4bcc.v                 ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/sum4bc/Sum4bcc.v               ;         ;
-; Restador/Restador.v              ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/Restador/Restador.v            ;         ;
-; Restador/rest1bcc.v              ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/Restador/rest1bcc.v            ;         ;
-; multiplicacion/multiplicador.v   ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/multiplicacion/multiplicador.v ;         ;
-; alu.v                            ; yes             ; User Verilog HDL File  ; C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v                          ;         ;
-+----------------------------------+-----------------+------------------------+------------------------------------------------------------------------------------+---------+
-
-
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 35        ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 55        ;
-;     -- 7 input functions                    ; 1         ;
-;     -- 6 input functions                    ; 4         ;
-;     -- 5 input functions                    ; 2         ;
-;     -- 4 input functions                    ; 12        ;
-;     -- <=3 input functions                  ; 36        ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 50        ;
-;                                             ;           ;
-; I/O pins                                    ; 21        ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 40        ;
-; Total fan-out                               ; 368       ;
-; Average fan-out                             ; 2.50      ;
-+---------------------------------------------+-----------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                       ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
-; Compilation Hierarchy Node  ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                 ; Entity Name   ; Library Name ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
-; |alu                        ; 55 (1)              ; 50 (0)                    ; 0                 ; 0          ; 21   ; 0            ; |alu                                ; alu           ; work         ;
-;    |Restador:rest|          ; 1 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|Restador:rest                  ; Restador      ; work         ;
-;       |rest1bcc:s2|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|Restador:rest|rest1bcc:s2      ; rest1bcc      ; work         ;
-;    |display:dp|             ; 38 (31)             ; 27 (27)                   ; 0                 ; 0          ; 0    ; 0            ; |alu|display:dp                     ; display       ; work         ;
-;       |BCDtoSSeg:bcdtosseg| ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |alu|display:dp|BCDtoSSeg:bcdtosseg ; BCDtoSSeg     ; work         ;
-;    |multiplicador:mul|      ; 15 (15)             ; 23 (23)                   ; 0                 ; 0          ; 0    ; 0            ; |alu|multiplicador:mul              ; multiplicador ; work         ;
-+-----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+-------------------------------------+---------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------+
-; State Machine - |alu|multiplicador:mul|status                                      ;
-+--------------+--------------+------------+--------------+------------+-------------+
-; Name         ; status.SHIFT ; status.ADD ; status.CHECK ; status.000 ; status.END1 ;
-+--------------+--------------+------------+--------------+------------+-------------+
-; status.000   ; 0            ; 0          ; 0            ; 0          ; 0           ;
-; status.CHECK ; 0            ; 0          ; 1            ; 1          ; 0           ;
-; status.ADD   ; 0            ; 1          ; 0            ; 1          ; 0           ;
-; status.SHIFT ; 1            ; 0          ; 0            ; 1          ; 0           ;
-; status.END1  ; 0            ; 0          ; 0            ; 1          ; 1           ;
-+--------------+--------------+------------+--------------+------------+-------------+
-
-
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; multiplicador:mul|status~7             ; Lost fanout        ;
-; multiplicador:mul|status~8             ; Lost fanout        ;
-; display:dp|cfreq[17..26]               ; Lost fanout        ;
-; Total Number of Removed Registers = 12 ;                    ;
-+----------------------------------------+--------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                         ;
-+----------------------+--------------------+-----------------------------------------------------------------------------------------+
-; Register name        ; Reason for Removal ; Registers Removed due to This Register                                                  ;
-+----------------------+--------------------+-----------------------------------------------------------------------------------------+
-; display:dp|cfreq[26] ; Lost Fanouts       ; display:dp|cfreq[25], display:dp|cfreq[24], display:dp|cfreq[23], display:dp|cfreq[22], ;
-;                      ;                    ; display:dp|cfreq[21], display:dp|cfreq[20], display:dp|cfreq[19], display:dp|cfreq[18], ;
-;                      ;                    ; display:dp|cfreq[17]                                                                    ;
-+----------------------+--------------------+-----------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 50    ;
-; Number of registers using Synchronous Clear  ; 19    ;
-; Number of registers using Synchronous Load   ; 19    ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 19    ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                             ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |alu|multiplicador:mul|B[2]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |alu|multiplicador:mul|B[0]  ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |alu|multiplicador:mul|A[5]  ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |alu|multiplicador:mul|pp[4] ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |alu|display:dp|BCD[2]       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: multiplicador:mul ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; START          ; 0     ; Signed Integer                        ;
-; CHECK          ; 1     ; Signed Integer                        ;
-; ADD            ; 2     ; Signed Integer                        ;
-; SHIFT          ; 3     ; Signed Integer                        ;
-; END1           ; 4     ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "display:dp"                                                                                                    ;
 +------------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -377,107 +238,58 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_ff             ; 50                          ;
-;     ENA               ; 4                           ;
-;     ENA SLD           ; 15                          ;
-;     SCLR              ; 19                          ;
-;     SLD               ; 4                           ;
-;     plain             ; 8                           ;
-; arriav_lcell_comb     ; 56                          ;
-;     arith             ; 23                          ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 6                           ;
-;     extend            ; 1                           ;
-;         7 data inputs ; 1                           ;
-;     normal            ; 32                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 9                           ;
-;         3 data inputs ; 2                           ;
-;         4 data inputs ; 12                          ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 4                           ;
-; boundary_port         ; 21                          ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.65                        ;
-+-----------------------+-----------------------------+
-
-
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
-
-
-+-------------------------------+
-; Analysis & Synthesis Messages ;
-+-------------------------------+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
+Info: Running Quartus Prime Analysis & Elaboration
     Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
-    Info: Processing started: Thu Apr 23 15:04:16 2020
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
+    Info: Processing started: Thu Apr 23 19:05:52 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu --analysis_and_elaboration
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file bcdtosseg/display.v
-    Info (12023): Found entity 1: display File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/display.v Line: 2
+    Info (12023): Found entity 1: display File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/BCDtoSSeg/display.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file bcdtosseg/bcdtosseg.v
-    Info (12023): Found entity 1: BCDtoSSeg File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/BCDtoSSeg.v Line: 1
+    Info (12023): Found entity 1: BCDtoSSeg File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/BCDtoSSeg/BCDtoSSeg.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sum4bc/verilog2.v
-    Info (12023): Found entity 1: sum1bcc File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/sum4bc/Verilog2.v Line: 1
+    Info (12023): Found entity 1: sum1bcc File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/sum4bc/Verilog2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file sum4bc/sum4bcc.v
-    Info (12023): Found entity 1: sum4bcc File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/sum4bc/Sum4bcc.v Line: 1
+    Info (12023): Found entity 1: sum4bcc File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/sum4bc/Sum4bcc.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file restador/restador.v
-    Info (12023): Found entity 1: Restador File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/Restador/Restador.v Line: 21
+    Info (12023): Found entity 1: Restador File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/Restador/Restador.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file restador/rest1bcc.v
-    Info (12023): Found entity 1: rest1bcc File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/Restador/rest1bcc.v Line: 21
+    Info (12023): Found entity 1: rest1bcc File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/Restador/rest1bcc.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file multiplicacion/multiplicador.v
-    Info (12023): Found entity 1: multiplicador File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/multiplicacion/multiplicador.v Line: 21
+    Info (12023): Found entity 1: multiplicador File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/multiplicacion/multiplicador.v Line: 21
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: alu File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 4
+    Info (12023): Found entity 1: alu File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 4
 Info (12127): Elaborating entity "alu" for the top level hierarchy
-Warning (10858): Verilog HDL warning at alu.v(9): object sal_div used but never assigned File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 9
-Warning (10036): Verilog HDL or VHDL warning at alu.v(18): object "init_div" assigned a value but never read File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 18
-Warning (10030): Net "sal_div" at alu.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 9
-Info (12128): Elaborating entity "sum4bcc" for hierarchy "sum4bcc:sumador" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 59
-Info (12128): Elaborating entity "sum1bcc" for hierarchy "sum4bcc:sumador|sum1bcc:s0" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/sum4bc/Sum4bcc.v Line: 9
-Info (12128): Elaborating entity "multiplicador" for hierarchy "multiplicador:mul" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 60
-Warning (10230): Verilog HDL assignment warning at multiplicador.v(33): truncated value with size 32 to match size of target (1) File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/multiplicacion/multiplicador.v Line: 33
-Info (12128): Elaborating entity "Restador" for hierarchy "Restador:rest" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 61
-Info (12128): Elaborating entity "rest1bcc" for hierarchy "Restador:rest|rest1bcc:s0" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/Restador/Restador.v Line: 29
-Info (12128): Elaborating entity "display" for hierarchy "display:dp" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/alu.v Line: 62
-Warning (10230): Verilog HDL assignment warning at display.v(29): truncated value with size 32 to match size of target (27) File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/display.v Line: 29
-Warning (10230): Verilog HDL assignment warning at display.v(39): truncated value with size 32 to match size of target (2) File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/display.v Line: 39
-Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:dp|BCDtoSSeg:bcdtosseg" File: C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/BCDtoSSeg/display.v Line: 16
+Warning (10858): Verilog HDL warning at alu.v(9): object sal_div used but never assigned File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 9
+Warning (10036): Verilog HDL or VHDL warning at alu.v(18): object "init_div" assigned a value but never read File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 18
+Warning (10030): Net "sal_div" at alu.v(9) has no driver or initial value, using a default initial value '0' File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 9
+Info (12128): Elaborating entity "sum4bcc" for hierarchy "sum4bcc:sumador" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 59
+Info (12128): Elaborating entity "sum1bcc" for hierarchy "sum4bcc:sumador|sum1bcc:s0" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/sum4bc/Sum4bcc.v Line: 9
+Info (12128): Elaborating entity "multiplicador" for hierarchy "multiplicador:mul" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 60
+Warning (10230): Verilog HDL assignment warning at multiplicador.v(33): truncated value with size 32 to match size of target (1) File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/multiplicacion/multiplicador.v Line: 33
+Info (12128): Elaborating entity "Restador" for hierarchy "Restador:rest" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 61
+Info (12128): Elaborating entity "rest1bcc" for hierarchy "Restador:rest|rest1bcc:s0" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/Restador/Restador.v Line: 29
+Info (12128): Elaborating entity "display" for hierarchy "display:dp" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/alu.v Line: 62
+Warning (10230): Verilog HDL assignment warning at display.v(29): truncated value with size 32 to match size of target (27) File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/BCDtoSSeg/display.v Line: 29
+Warning (10230): Verilog HDL assignment warning at display.v(39): truncated value with size 32 to match size of target (2) File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/BCDtoSSeg/display.v Line: 39
+Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:dp|BCDtoSSeg:bcdtosseg" File: C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/BCDtoSSeg/display.v Line: 16
 Warning (12241): 4 hierarchies have connectivity warnings - see the Connectivity Checks report folder
-Info (286030): Timing-Driven Synthesis is running
-Info (17049): 12 registers lost all their fanouts during netlist optimizations.
-Info (144001): Generated suppressed messages file C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/output_files/alu.map.smsg
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 87 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 11 output pins
-    Info (21061): Implemented 66 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4809 megabytes
-    Info: Processing ended: Thu Apr 23 15:04:32 2020
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:31
+Info (144001): Generated suppressed messages file C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/output_files/alu.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4789 megabytes
+    Info: Processing ended: Thu Apr 23 19:06:13 2020
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:50
 
 
-+------------------------------------------+
-; Analysis & Synthesis Suppressed Messages ;
-+------------------------------------------+
-The suppressed messages can be found in C:/Users/ivano/Desktop/Sergio Todo/Arquitectura/ALU/output_files/alu.map.smsg.
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in C:/Users/JAIDER NEIRA-ING.DES/Documents/GitHub/tercer corte/lab05-grupo1/ALU2/output_files/alu.map.smsg.
 
 
