@@ -35,7 +35,7 @@ A continuación se muestra los bloques que componen la unidad aritmética:
 ![multiplicador](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/multiplicador.jpeg)
 
 ## **Caja funcional del divisor**
-![DIVISOR](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/DIVISOR.JPG)
+![DIVISOR](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/DIVISOR.jpg)
 
 ![divisor_FPGA](https://github.com/ELINGAP-7545/lab05-grupo1/blob/master/fig/divisor_FPGA.JPG)
 
