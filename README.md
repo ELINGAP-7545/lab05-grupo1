@@ -90,13 +90,13 @@ El diagrama estructural, se soporta en los componentes desarrollados en los ante
 
 ## Entregables
 
--[x]1. Definir el diagrama estructurar interno de cada bloque funcionar 
--[x]2. Descargar la estructura propuesta de la  Unidad Aritmética del paquete de trabajo [WP05](https://classroom.github.com/g/dHrBou9a) Este proyecto cuenta con el archivo `alu.v` y, tiene la carpeta `src` que cuenta con las 5 carpetas de cada componente.
--[x]3. Implementar `alu.v` en la FPGA, y  comprobar el funcionamiento  de la suma la multiplicación y la visualización
--[x]4. Incluir el  HDL para le divisor  realizado en el ejercicio anterior, en la carpeta `src/divisor`  y, adicione los archivos e instanciar el bloque divisor.
--[x]5. Diseñar el bloque restador, adicionar dicho bloque a la respectiva carpeta e instanciar el modulo en `alu.v`.
--[]6. Realizar el testbench del bloque alu.
--[x]7. implementar el sistema completo en la FPGA remota
--[x]8. hacer la documentación respectiva en el archivo README
+-[x] 1. Definir el diagrama estructurar interno de cada bloque funcionar 
+-[x] 2. Descargar la estructura propuesta de la  Unidad Aritmética del paquete de trabajo [WP05](https://classroom.github.com/g/dHrBou9a) Este proyecto cuenta con el archivo `alu.v` y, tiene la carpeta `src` que cuenta con las 5 carpetas de cada componente.
+-[x] 3. Implementar `alu.v` en la FPGA, y  comprobar el funcionamiento  de la suma la multiplicación y la visualización
+-[x] 4. Incluir el  HDL para le divisor  realizado en el ejercicio anterior, en la carpeta `src/divisor`  y, adicione los archivos e instanciar el bloque divisor.
+-[x] 5. Diseñar el bloque restador, adicionar dicho bloque a la respectiva carpeta e instanciar el modulo en `alu.v`.
+-[] 6. Realizar el testbench del bloque alu.
+-[x] 7. implementar el sistema completo en la FPGA remota
+-[x] 8. hacer la documentación respectiva en el archivo README
   
 
